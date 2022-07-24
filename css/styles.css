@@ -12,9 +12,7 @@ body {
     color: var(accent-color);
 }
 
-.current {
-    color: var(--accent-color)
-}
+
 :root {
     --fond-color: #212121;
     --accent-color: #2196F3;
@@ -26,8 +24,8 @@ body {
     --color-logo: #2196F3;
     --color-logo-accent: #000000;
     --background-color: #F5F4FA;
-    
 }
+
 
 /*-------------HEADER------------*/
 
@@ -51,6 +49,10 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--fond-color);
+}
+
+.current {
+    color: var(--accent-color);
 }
 
 .header-link:hover,
@@ -102,6 +104,7 @@ body {
     letter-spacing: 0.06em;
     color: var(--text-btn);
     background-color: var(--background-btn);
+    cursor: pointer;
 }
 
 .main-btn:hover,
@@ -174,7 +177,7 @@ footer {
 }
 
 .footer-logo-accent {
-    color: var(--color-logo-accent);
+    color: var(--main-text);
 }
 
 .footer-address {
@@ -187,12 +190,27 @@ footer {
     color: var(--main-text);
 }
 
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--accent-color);
+}
+
 .footer-mail,
 .footer-tel  {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-mail:hover,
+.footer-mail:focus {
+    color: var(--accent-color);
+}
+
+.footer-tel:hover,
+.footer-tel:focus {
+    color: var(--accent-color);
 }
 
 /*-------------------PORTFOLIO PAGE------------*/
@@ -210,18 +228,26 @@ footer {
     overflow: hidden;
 }
 
-.btn-list {
-    background-position: var(--background-color);
-}
-.btn-item {
+.btn-portfolio {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: 0.03em;
+    border: 0;
+    border-radius: 4px;
     color: var(--fond-color);
+    background-color: var(--background-color);
     cursor: pointer;    
 }
+
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+    background-color: var(--background-btn);
+    color: var(--text-btn);
+}
+
+
 
 .project-title {
     font-weight: 700;
