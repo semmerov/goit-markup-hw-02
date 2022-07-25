@@ -258,9 +258,8 @@ footer {
 }
 
 .project-text {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
     color: var(--p-text);
 }
